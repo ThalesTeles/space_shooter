@@ -35,7 +35,6 @@
   },
   "name":"Space_Shooter",
   "resources":[
-    {"id":{"name":"LINK_TO_TUTORIALS","path":"notes/LINK_TO_TUTORIALS/LINK_TO_TUTORIALS.yy",},},
     {"id":{"name":"obj_boundary_box","path":"objects/obj_boundary_box/obj_boundary_box.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_enemy_ship","path":"objects/obj_enemy_ship/obj_enemy_ship.yy",},},
