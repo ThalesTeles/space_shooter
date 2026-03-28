@@ -35,9 +35,8 @@
   },
   "name":"Space_Shooter",
   "resources":[
-    {"id":{"name":"obj_base_bullet","path":"objects/obj_base_bullet/obj_base_bullet.yy",},},
-    {"id":{"name":"obj_base_ship","path":"objects/obj_base_ship/obj_base_ship.yy",},},
     {"id":{"name":"obj_boundary_box","path":"objects/obj_boundary_box/obj_boundary_box.yy",},},
+    {"id":{"name":"obj_danger","path":"objects/obj_danger/obj_danger.yy",},},
     {"id":{"name":"obj_enemy_bullet","path":"objects/obj_enemy_bullet/obj_enemy_bullet.yy",},},
     {"id":{"name":"obj_enemy_ship","path":"objects/obj_enemy_ship/obj_enemy_ship.yy",},},
     {"id":{"name":"obj_enemy_turret","path":"objects/obj_enemy_turret/obj_enemy_turret.yy",},},

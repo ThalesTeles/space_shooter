@@ -1,1 +1,0 @@
-direction = ship.image_angle;

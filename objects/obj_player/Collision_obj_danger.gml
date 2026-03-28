@@ -2,7 +2,7 @@ with(other){
 	instance_destroy();
 }
 
-hp -= obj_enemy_ship.damage
+hp -= other.damage
 
 if(hp <= 0){
 	visible = false;

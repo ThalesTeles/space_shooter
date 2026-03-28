@@ -4,14 +4,16 @@
   "eventList":[],
   "managed":true,
   "name":"obj_enemy_bullet",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_danger","path":"objects/obj_danger/obj_danger.yy",},"propertyId":{"name":"damage","path":"objects/obj_danger/obj_danger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_base_bullet",
-    "path":"objects/obj_base_bullet/obj_base_bullet.yy",
+    "name":"obj_danger",
+    "path":"objects/obj_danger/obj_danger.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
