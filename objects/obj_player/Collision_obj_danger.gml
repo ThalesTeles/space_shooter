@@ -7,7 +7,8 @@ hp -= other.damage
 if(hp <= 0){
 	visible = false;
 	with(all){
-		speed = 0;
+		instance_destroy()
+		room_goto(gameOver)
 	}
 } else	{
 		isBlinking = true;

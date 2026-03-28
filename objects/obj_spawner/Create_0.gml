@@ -1,1 +1,1 @@
-alarm[ALARM_SPAWNER] = spawn_time;
+alarm[ALARM_SPAWNER] = 10;
