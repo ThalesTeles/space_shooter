@@ -1,3 +1,3 @@
-y = clamp(y, sprite_yoffset, room_width - sprite_yoffset);
-
-
+if(x + sprite_xoffset <= 0 ){
+	instance_destroy();
+}
