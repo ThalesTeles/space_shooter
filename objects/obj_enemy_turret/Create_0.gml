@@ -1,0 +1,1 @@
+alarm[ALARM_SHOOT] = 180;

@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bullet",
+  "%Name":"obj_enemy_turret",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bullet",
+  "name":"obj_enemy_turret",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -26,13 +27,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"naveMae","filters":[],"listItems":[],"multiselect":false,"name":"naveMae","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bullet",
-    "path":"sprites/spr_bullet/spr_bullet.yy",
+    "name":"spr_enemy_turret",
+    "path":"sprites/spr_enemy_turret/spr_enemy_turret.yy",
   },
   "spriteMaskId":null,
   "visible":true,
