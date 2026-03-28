@@ -26,6 +26,13 @@ if keyboard_check_pressed(vk_space){
 	});
 }
 
+if(hp < hpMax){
+	hp+= hpRestorationRate;
+	if(hp > hpMax){
+		hp = hpMax;	
+	}
+}
+
 
 
 
