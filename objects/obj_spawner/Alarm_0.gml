@@ -16,4 +16,4 @@ for(i = 0 ; i <  enemyNum; i++){
 	instance_create_layer(posX + extraDistanceX, posY, "Instances", obj_enemy_ship);
 }
 
-alarm[0] = spawn_time;
+alarm[ALARM_SPAWNER] = spawn_time;
