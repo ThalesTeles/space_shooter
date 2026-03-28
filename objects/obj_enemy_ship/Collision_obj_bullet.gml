@@ -1,6 +1,7 @@
 hp -= obj_player.damage;
 
 if(hp <= 0){
+	instance_create_layer(x,y,"Instances", obj_explosion);
 	instance_destroy();
 } else {
 	if(!isBlinking) {
