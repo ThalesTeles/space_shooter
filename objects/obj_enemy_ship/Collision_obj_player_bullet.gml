@@ -1,5 +1,3 @@
-instance_destroy(other);
-
 damageColour = c_red;
 finalDamage = other.damage;
 rollDamage = irandom_range(1,100);
@@ -15,6 +13,8 @@ instance_create_layer(x,y, "Instances", obj_damage_text,
 });
 
 hp -= finalDamage;
+
+instance_destroy(other);
 
 if(hp <= 0){
 	instance_create_layer(x,y,"Instances", obj_explosion);
@@ -35,4 +35,5 @@ if(hp <= 0){
 	alarm[ALARM_BLINK_DURATION] = blinkingDuration;
 	alarm[ALARM_BLINK] = blinkSpeed;
 }
+
 
