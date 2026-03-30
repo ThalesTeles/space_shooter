@@ -17,13 +17,19 @@ if keyboard_check(vk_right) {
 x = clamp(x, sprite_xoffset, room_width - sprite_xoffset);
 y = clamp(y, sprite_yoffset, room_height - sprite_yoffset);
 
+if (shootCooldown > 0){
+	shootCooldown -= 1;
+}
 
-if keyboard_check_pressed(vk_space){
+if (keyboard_check(vk_space) && shootCooldown <= 0){
 	instance_create_layer(x,y, "Instances", obj_player_bullet,
 	{
-		ship : id,
+		damage: damage + strengthLevel * 5,
+		criticalRate: criticalRate,
 		speed : 30,
 	});
+	
+	shootCooldown = fireRate;
 }
 
 if(hp < hpMax){

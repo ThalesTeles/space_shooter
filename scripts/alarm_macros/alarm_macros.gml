@@ -2,4 +2,3 @@
 #macro ALARM_BLINK 1
 #macro ALARM_SPAWNER 0
 #macro ALARM_ENEMY_SHOOT 0
-#macro ALARM_SHOOT 2
