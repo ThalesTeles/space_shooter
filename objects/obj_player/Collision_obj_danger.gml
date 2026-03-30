@@ -5,11 +5,7 @@ with(other){
 hp -= other.damage
 
 if(hp <= 0){
-	visible = false;
-	with(all){
-		instance_destroy()
-		room_goto(gameOver)
-	}
+	instance_destroy();
 } else	{
 		isBlinking = true;
 		alarm[ALARM_BLINK_DURATION] = blinkingDuration;

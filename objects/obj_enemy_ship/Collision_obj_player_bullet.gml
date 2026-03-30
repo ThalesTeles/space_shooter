@@ -18,19 +18,27 @@ instance_destroy(other);
 
 if(hp <= 0){
 	instance_create_layer(x,y,"Instances", obj_explosion);
+	pitchVariation = random_range(0.8, 1.2);
+	audio_sound_pitch(snd_explosion, pitchVariation);
+	audio_play_sound(snd_explosion,11, false);
 	instance_destroy();
 	if (instance_exists(obj_player)){
-	obj_player.xp += xpDrop;
+		obj_player.xp += xpDrop;
 		if (obj_player.xp >= obj_player.xpMax){
+			audio_play_sound(snd_level_up, 12, false);
 			with(obj_player){
 			level += 1;
 			xp -=  obj_player.xpMax;
 			xpMax = obj_player.xpMax * 1.25;
+			hp = hpMax;
 			attributePoints += 1;
 			}
 		}	
 	}
 } else {
+	pitchVariation = random_range(0.8, 1.2);
+	audio_sound_pitch(snd_enemy_ship_hit, pitchVariation);
+	audio_play_sound(snd_enemy_ship_hit, 9, false);
 	isBlinking = true;
 	alarm[ALARM_BLINK_DURATION] = blinkingDuration;
 	alarm[ALARM_BLINK] = blinkSpeed;
