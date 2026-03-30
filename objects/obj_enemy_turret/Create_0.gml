@@ -1,1 +1,1 @@
-alarm[ALARM_SHOOT] = 120;
+alarm[ALARM_ENEMY_SHOOT] = 120;

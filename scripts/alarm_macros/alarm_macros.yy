@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"macros",
+  "%Name":"alarm_macros",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macros",
+  "name":"alarm_macros",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

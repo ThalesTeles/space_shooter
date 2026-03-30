@@ -7,4 +7,4 @@ instance_create_layer(x,y,"Instances_top", obj_enemy_bullet,
 }
 );
 
-alarm[ALARM_SHOOT] = 120
+alarm[ALARM_ENEMY_SHOOT] = 120
