@@ -8,11 +8,12 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_enemy_ship",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_danger","path":"objects/obj_danger/obj_danger.yy",},"propertyId":{"name":"damage","path":"objects/obj_danger/obj_danger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_danger","path":"objects/obj_danger/obj_danger.yy",},"propertyId":{"name":"damage","path":"objects/obj_danger/obj_danger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
     "name":"Objects",
@@ -36,7 +37,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"hp","filters":[],"listItems":[],"multiselect":false,"name":"hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varDescription":"The amount of DAMAGE that can be taken before the ship is destroyed","varFriendlyName":"Health Points","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"hp","filters":[],"listItems":[],"multiselect":false,"name":"hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varDescription":"The amount of DAMAGE that can be taken before the ship is destroyed","varFriendlyName":"Health Points","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"hpMax","filters":[],"listItems":[],"multiselect":false,"name":"hpMax","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"torreta","filters":[],"listItems":[],"multiselect":false,"name":"torreta","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"blinkingDuration","filters":[],"listItems":[],"multiselect":false,"name":"blinkingDuration","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"blinkSpeed","filters":[],"listItems":[],"multiselect":false,"name":"blinkSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},

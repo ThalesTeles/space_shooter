@@ -2,6 +2,9 @@ gapHealthBar = 10;
 widthHealthBar = 10;
 
 hpPc = (hp/ hpMax) * 100;
-draw_healthbar(x - sprite_xoffset - gapHealthBar, y + sprite_yoffset + gapHealthBar, 
-							  x + sprite_xoffset + gapHealthBar , y + sprite_yoffset + gapHealthBar + widthHealthBar,
-							  hpPc, c_gray, c_red, c_green, 0, true, true);
+hpPc = (hp/ hpMax) * 100;
+posLeft = x - sprite_xoffset - gapHealthBar;
+posTop = y + sprite_yoffset + gapHealthBar;
+posRight = x + sprite_xoffset + gapHealthBar;
+posBottom = y + sprite_yoffset + gapHealthBar + widthHealthBar;
+draw_healthbar(posLeft, posTop, posRight, posBottom,hpPc, c_gray, c_red, c_green, 0, true, true);

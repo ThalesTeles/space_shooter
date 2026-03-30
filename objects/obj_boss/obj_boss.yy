@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_danger",
+  "%Name":"obj_boss",
   "eventList":[],
   "managed":true,
-  "name":"obj_danger",
+  "name":"obj_boss",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -23,9 +23,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"damage","filters":[],"listItems":[],"multiselect":false,"name":"damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

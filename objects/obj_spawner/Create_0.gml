@@ -1,1 +1,1 @@
-alarm[ALARM_SPAWNER] = 10;
+alarm[ALARM_SPAWNER] = 60*5;
