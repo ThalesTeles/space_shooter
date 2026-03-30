@@ -35,6 +35,7 @@
   },
   "name":"Space_Shooter",
   "resources":[
+    {"id":{"name":"damage_font","path":"fonts/damage_font/damage_font.yy",},},
     {"id":{"name":"obj_button_main_menu","path":"objects/obj_button_main_menu/obj_button_main_menu.yy",},},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},

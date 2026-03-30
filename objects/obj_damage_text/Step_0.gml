@@ -1,5 +1,5 @@
 alpha -= 0.02;
 
-if (alpha){
+if (alpha <= 0){
 	instance_destroy();
 }
