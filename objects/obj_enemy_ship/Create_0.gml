@@ -5,6 +5,7 @@ direction = obj_enemy_ship.image_angle;
 if(instance_exists(obj_game)){
 	var _baseHp = 3;
 	var _baseDamage = 1;
+	var _baseXpDrop = 25; 
 	var _waveMultiplier = 1 + (obj_game.currentWave * obj_game.linearWaveMultiplier);
 	
 	var _peakMultiplier = 1;
@@ -15,6 +16,7 @@ if(instance_exists(obj_game)){
 	hpMax = _baseHp * _waveMultiplier * _peakMultiplier;
 	hp = hpMax;
 	damage = _baseDamage * _waveMultiplier * _peakMultiplier;
+	xpDrop = _baseXpDrop * _waveMultiplier 
 }
 
 torreta = instance_create_layer(x,y,"Instances_Top", obj_enemy_turret,
@@ -26,4 +28,5 @@ torreta = instance_create_layer(x,y,"Instances_Top", obj_enemy_turret,
 	image_yscale: 0.75,
 	
 	damage : damage,
+	xpDrop :  xpDrop,
 });

@@ -6,7 +6,7 @@ if(rollDamage <= other.criticalRate *100){
 	damageColour = c_yellow;
 }
 
-instance_create_layer(x,y, "Instances", obj_damage_text, 
+instance_create_layer(x,y, "Instances", obj_text_damage, 
 {
 	damage: finalDamage,
 	colour: damageColour,
@@ -29,7 +29,15 @@ if(hp <= 0){
 	instance_destroy();
 	
 	if (instance_exists(obj_player)){
+		
+		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_text_xp, 
+		{
+			xp : xpDrop,
+			colour : c_blue,
+		});
+		
 		obj_player.xp += xpDrop;
+		obj_player.defeatedEnemies += 1;
 		if (obj_player.xp >= obj_player.xpMax){
 			audio_play_sound(snd_level_up, 12, false);
 			with(obj_player){
@@ -37,8 +45,7 @@ if(hp <= 0){
 			xp -=  obj_player.xpMax;
 			xpMax = obj_player.xpMax * 1.25;
 			hp = hpMax;
-			attributePoints += 1;
-			defeatedEnemies += 1;
+			attributePoints += 1;			
 			}
 		}	
 	}
