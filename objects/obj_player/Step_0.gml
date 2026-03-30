@@ -16,7 +16,7 @@ if (shootCooldown > 0){
 	shootCooldown -= 1;
 }
 
-if (keyboard_check(vk_space) && shootCooldown <= 0){
+if (keyboard_check(ord("Z")) && shootCooldown <= 0){
 	
 	pitchVariation = random_range(0.8, 1.2);
 	audio_sound_pitch(snd_ship_shoot, pitchVariation);
