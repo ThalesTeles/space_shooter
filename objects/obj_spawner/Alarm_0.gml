@@ -4,10 +4,10 @@ maxDistanceX = 200;
 
 section = floor(room_height/enemyNum);
 
-for(var _i = 0 ; _i <  enemyNum; _i++){
+for(var i = 0 ; i <  enemyNum; i++){
 	extraDistanceX = irandom_range(minDistanceX, maxDistanceX);
-	minSection = (_i * section) + sprite_get_yoffset(spr_enemy_ship)
-	maxSection = ((_i + 1) * section) - sprite_get_yoffset(spr_enemy_ship);
+	minSection = (i * section) + sprite_get_yoffset(spr_enemy_ship)
+	maxSection = ((i + 1) * section) - sprite_get_yoffset(spr_enemy_ship);
 	
 	posX = room_width + sprite_get_xoffset(spr_enemy_ship) + extraDistanceX;
 	posY = irandom_range(minSection, maxSection)

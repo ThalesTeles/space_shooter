@@ -11,7 +11,7 @@ if(instance_exists(obj_game)){
 			alarm[ALARM_SPAWNER] = -1;
 		}	
 	} else{
-		spawnTime = max(60,  60*5 - (obj_game.currentWave *2));
+		spawnTime = max(minSpawnTime,  60*5 - (obj_game.currentWave *30));
 		if(alarm[ALARM_SPAWNER] < 0){
 			alarm[ALARM_SPAWNER] = spawnTime
 		}

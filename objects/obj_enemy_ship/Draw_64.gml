@@ -1,6 +1,6 @@
 
 if(instance_exists(obj_game)){
-	if(global.debugMode){
+	if(DEBUG){
 		gapHealthBar = 10;
 		widthHealthBar = 10;
 
@@ -22,4 +22,5 @@ if(instance_exists(obj_game)){
 		draw_set_valign(fa_top);
 	}
 }
+
 

@@ -3,3 +3,5 @@
 #macro ALARM_SPAWNER 0
 #macro ALARM_ENEMY_SHOOT 0
 #macro ALARM_GAME_OVER 0
+
+#macro DEBUG true

@@ -5,7 +5,7 @@ if(instance_exists(obj_player)){
 			attributePoints -= 1;
 			hpMax += 5
 			hp = hpMax
-			hpRestorationRate += 0.00166
+			hpRestorationRate += 0.0001
 			defenseLevel += 1;
 			}
 	}

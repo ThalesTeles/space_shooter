@@ -7,7 +7,7 @@ if(instance_exists(obj_game)){
 	var _baseDamage = 1;
 	var _waveMultiplier = 1 + (obj_game.currentWave * obj_game.linearWaveMultiplier);
 	
-	var _peakMultiplier
+	var _peakMultiplier = 1;
 	if((obj_game.currentWave % obj_game.peakWave == 0) && (obj_game.currentWave % obj_game.waveBoss) != 0){
 		_peakMultiplier = obj_game.peakWaveMultipier;
 	}
