@@ -5,3 +5,5 @@ waveBoss = 10;
 linearWaveMultiplier = 0.15;
 peakWaveMultipier = 0.5;
 peakWave = 5;
+
+global.debugMode = true;

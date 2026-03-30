@@ -1,6 +1,6 @@
 
 if(instance_exists(obj_game)){
-	if(obj_game.debbugMode){
+	if(global.debugMode){
 		gapHealthBar = 10;
 		widthHealthBar = 10;
 

@@ -17,11 +17,17 @@ hp -= finalDamage;
 instance_destroy(other);
 
 if(hp <= 0){
+	if(instance_exists(obj_game)){
+		obj_game.defeatedEnemies += 1;
+	}
+	
 	instance_create_layer(x,y,"Instances", obj_explosion);
 	pitchVariation = random_range(0.8, 1.2);
 	audio_sound_pitch(snd_explosion, pitchVariation);
 	audio_play_sound(snd_explosion,11, false);
+	
 	instance_destroy();
+	
 	if (instance_exists(obj_player)){
 		obj_player.xp += xpDrop;
 		if (obj_player.xp >= obj_player.xpMax){
@@ -32,6 +38,7 @@ if(hp <= 0){
 			xpMax = obj_player.xpMax * 1.25;
 			hp = hpMax;
 			attributePoints += 1;
+			defeatedEnemies += 1;
 			}
 		}	
 	}
