@@ -1,4 +1,4 @@
-enemyNum = irandom_range(3, 5);
+enemyNum = irandom_range(minEnemies, maxEnemies);
 minDistanceX = 20;
 maxDistanceX = 200;
 
@@ -14,5 +14,3 @@ for(var i = 0 ; i <  enemyNum; i++){
 	
 	instance_create_layer(posX + extraDistanceX, posY, "Instances", obj_enemy_ship);
 }
-
-alarm[ALARM_SPAWNER] = 60*5;

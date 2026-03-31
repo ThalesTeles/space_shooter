@@ -1,11 +1,14 @@
-//hp -= other.damage
+if(!isInvincible){
+	
+	hp -= other.damage
+	if(hp <= 0){
+		instance_destroy();
+		
+	} else	{
+		isInvincible = true;
+		alarm[AlARM_INVICIBILITY] = invincibilityTime;
+	}
+}
 
-//if(hp <= 0){
-//	instance_destroy();
-//} else	{
-//		isBlinking = true;
-//		alarm[ALARM_BLINK_DURATION] = blinkingDuration;
-//		alarm[ALARM_BLINK] = blinkSpeed;
-//}
 
-//instance_destroy(other);
+instance_destroy(other);

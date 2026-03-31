@@ -35,7 +35,9 @@
   },
   "name":"Space_Shooter",
   "resources":[
-    {"id":{"name":"damage_font","path":"fonts/damage_font/damage_font.yy",},},
+    {"id":{"name":"fnt_damage","path":"fonts/fnt_damage/fnt_damage.yy",},},
+    {"id":{"name":"fnt_ui_player","path":"fonts/fnt_ui_player/fnt_ui_player.yy",},},
+    {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
     {"id":{"name":"obj_audio_manager","path":"objects/obj_audio_manager/obj_audio_manager.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_button_base","path":"objects/obj_button_base/obj_button_base.yy",},},

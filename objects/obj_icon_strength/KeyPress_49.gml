@@ -3,10 +3,11 @@ if(instance_exists(obj_player)){
 		audio_play_sound(snd_upgrade_attribute, 13, false);
 		with(obj_player){
 			attributePoints -= 1;
+			strengthLevel+= 1;
 			if(criticalRate <= maxCriticalRate){
      			criticalRate += 0.05;
 			}
-			strengthLevel+= 1;
-			}
+			damage = baseDamage + strengthLevel;
+		}
 	}
 }

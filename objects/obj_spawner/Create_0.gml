@@ -1,1 +1,1 @@
-alarm[ALARM_SPAWNER] = 60*5;
+alarm[ALARM_SPAWNER] = baseSpawnTime;

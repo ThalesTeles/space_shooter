@@ -24,7 +24,7 @@ if (keyboard_check(ord("Z")) && shootCooldown <= 0){
 	
 	instance_create_layer(x,y, "Instances", obj_player_bullet,
 	{
-		damage: damage + strengthLevel * 5,
+		damage: damage,
 		criticalRate: criticalRate,
 		speed : 30,
 	});
@@ -37,6 +37,16 @@ if(hp < hpMax){
 	if(hp > hpMax){
 		hp = hpMax;	
 	}
+}
+
+if (isInvincible) {
+    if (current_time % 200 < 100) {
+        image_alpha = 0.3; 
+    } else {
+        image_alpha = 1.0; 
+    }
+} else {
+    image_alpha = 1.0;
 }
 
 
