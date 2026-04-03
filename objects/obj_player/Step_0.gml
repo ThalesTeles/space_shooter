@@ -1,7 +1,7 @@
-var _right = keyboard_check(vk_right) ? 1 : 0;
-var _left  = keyboard_check(vk_left)  ? 1 : 0;
-var _down  = keyboard_check(vk_down)  ? 1 : 0;
-var _up    = keyboard_check(vk_up)    ? 1 : 0;
+var _right = (keyboard_check(vk_right) or keyboard_check(ord("D"))) ? 1 : 0;
+var _left  = (keyboard_check(vk_left)  or keyboard_check(ord("A"))) ? 1 : 0;
+var _down  = (keyboard_check(vk_down) or keyboard_check(ord("S"))) ? 1 : 0;
+var _up   = (keyboard_check(vk_up)  or keyboard_check(ord("W")))  ? 1 : 0;
 
 var _hInput = _right - _left;
 var _vInput = _down - _up;

@@ -5,4 +5,4 @@
 #macro ALARM_GAME_OVER 0
 #macro AlARM_INVICIBILITY 2
 
-#macro DEBUG true
+#macro DEBUG false

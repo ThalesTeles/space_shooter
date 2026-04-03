@@ -1,11 +1,10 @@
 instance_create_layer(x,y,"Instances_top", obj_enemy_bullet, 
 {
 	ship : id,
-	speed : 15,
+	speed : bulletSpeed,
 	direction : image_angle,
 	image_angle : image_angle,
 	damage : damage,
-}
-);
+});
 
-alarm[ALARM_ENEMY_SHOOT] = 120
+alarm[ALARM_ENEMY_SHOOT] = shootTime

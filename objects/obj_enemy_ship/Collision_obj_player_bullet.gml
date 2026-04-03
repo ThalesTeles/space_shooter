@@ -22,6 +22,7 @@ if(hp <= 0){
 	}
 	
 	instance_create_layer(x,y,"Instances", obj_explosion);
+	
 	pitchVariation = random_range(0.8, 1.2);
 	audio_sound_pitch(snd_explosion, pitchVariation);
 	audio_play_sound(snd_explosion,11, false);
